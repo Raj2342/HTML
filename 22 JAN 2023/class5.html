@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class5 [ get and post forms]</title>
+</head>
+<body>   note: value and name  for server 
+  <!-- value tab kam aati hai jab multiple choice online paper banaya jaye usko get method se 
+  karke url me ans find kar sakte ho  -->
+      <!-- Get Method
+   1. After submitting the form, the GET method displays form values in the address
+bar of the new browser tab.
+
+2 ● It is only allowed to be roughly 3000 characters long. Only non-secure data,
+not sensitive data, can be used with it.
+Syntax:
+<form method="get"> -->
+
+    <!-- post method : es  method  me user ki information url me saved  nahi hoti hai information will secure . 
+    Unlike the GET method, the post method prevents form values from appearing
+in the address bar of the new browser tab after the form has been submitted.
+
+● It adds form information to the body.
+
+Syntax:
+<form method="post"> -->
+    <form  method="post" target="_blank" action="/signup" > <!-- action"/signup"  form submit hone ke bad new tab ke uppar
+     signup likh ke ayega --> 
+        <fieldset>
+          <legend>  user registration form</legend>
+          <br>
+          <label for=" name"> Name:</label>
+          <input type="text" name="username" id="name">
+          <br>
+          <label for="address"> Adresss:</label>
+          <br>
+          <textarea name="useraddress" id="address" cols="30" rows="10">   </textarea>
+          <br>
+          <label for="dob">Enter your date of birth</label>
+          <input type="date" name="userdob" id="dob">
+          <br>
+          
+           Select gender:
+           <br>
+           <label for="male"> MALE:</label>
+           <input type="radio" name="gen" id="male" value="male"> <!-- value=" " es se pata lag jata hai server   gender ke ander 
+              male choose keya hai ya female  name =" "" vo keval gender show akrayega and ye batayega male , femal gender ke ander hai 
+                enme se koi ek choose karna hoga  , value basically server user ke input ko pahachan sake ye user ka name hai , address -->
+           <br>
+            <label for="female">female:</label>
+            <input type="radio" name="gen" id="female"  value="female">
+            <br>
+            <label for="nogender">NONE</label>
+            <input type="radio" name="gen" id="nogender"  value=" nogender">
+          <br>
+          email:
+          <input type="email" name="" id="">
+            term and condition :
+            <br>
+            <label for=" abusive "> no abusive language</label>
+            <input type="checkbox" name="ok" id="abusive "  value=" abusive ">
+            <br>
+            <label for="facke">no facke content</label>
+            <input type="checkbox" name="no" id="facke">
+           <br>
+           reset:
+            <input type="reset" value="reset">
+            <br>
+            SUBMIT:
+            <input type="submit" value="submit">
+    
+        </fieldset>
+    
+     </form>
+    
+    
+    
+    
+    
+
+
+
+    
+</body>
+</html>

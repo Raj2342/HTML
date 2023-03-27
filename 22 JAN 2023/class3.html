@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class3 [ table and its properties ]</title>
+</head>
+<body>
+    <!-- table> row > th> td -->
+    
+    <table border cellpadding=" 25px"   cellspacing="5px"> <!-- padding : ander se  jagah dena , 
+                                                        cellspacing:  bahar se jagah dena 
+                                                       margin : bahar se jagah dena  -->
+      <tr>
+        <!-- table heading -->
+      <th> S.no.</th>
+      <th> name</th>
+      <th> uid</th>
+      <th> contact  No.</th>
+    </tr>
+    <tr>
+       <!-- table data  -->
+       <td>1.</td>
+       <td>mohan</td>
+       <td>11bcs1123</td>
+       <td>6576737898</td>
+    </tr>
+     <tr>
+       <td>2.</td>
+       <td>sohan</td>
+       <td>21bcs1123</td>
+       <td>6576737898</td>
+    </tr>
+    <tr>
+       <td>3.</td>
+       <td>hohan</td>
+       <td>31bcs1123</td>
+       <td>6576737898</td>
+      </tr>
+    </tr>
+
+</table>
+<h1> merge two column</h1>
+
+    <table  border  cellpadding = " 25px">
+     <tr>
+        <th> S.no.</th>
+        <th> name</th>
+        <th> uid</th>
+        <th> contact  No.</th>
+
+     </tr>
+     <tr>
+        <td>1.</td>
+        <td>mohan</td>
+        <td colspan = " 2px">11bcs1123</td> <!--  for strect two col merge border use 'colspan'-->
+    </tr>
+     <tr>
+        <td>2.</td>
+        <td >sohan</td>
+        <td>21bcs1123</td>
+        <td rowspan="2px" >6576737898</td> <!-- for strect  two row merge border -->
+
+     </tr>
+
+     <tr>
+        <td>3.</td>
+        <td>hohan</td>
+        <td>31bcs1123</td>
+    </tr>
+
+
+
+
+    </table>
+
+
+    
+</body>
+</html>

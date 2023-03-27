@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clas6[types of input form</title>
+</head>
+<body>
+    <fieldset>
+        note : sare attribute nahi padh sakte  jin tool ki jarurat ho website banane ke leye use google karo and donot try  learn 
+
+        <legend>user details</legend> <!-- top per likh ke ayega -->
+       <label for="name">Enter your name :</label>  
+       <input type="text" id="name" name="username"  value="john"  readonly  disabled  >  <!-- learning-1 : placeholder = " "
+     attribute  hint ki tarah kam karta hai 
+        learning -2 : value = " "  text me value ka role  app pahele se he likha hua user ko dhekha sakte ho 
+          learning -3 readonly -  only read not edit  
+            learning - 4 :  disabled : it show like disable  and noone can edit 
+            learning-5 : autofocus: text e automatically focused for writing someting -->
+          
+           <label for="fate">Enter your fathe name : </label>
+           <input type="text" name="userfathename" id="fathe"  autofocus>
+
+           <!-- learning:6    number attribute -->
+           number:
+           <input type="number" min="0" max="10" >
+             
+             
+
+       <br>
+       <br>
+       <!-- learning -2  -->
+        <label for="kam" class="useraddress" > bahi kam chal </label>
+        <br>
+        <!-- discription neeche paunch gya tha  ese  uppar  lane ke leye use keya hai -->
+       <textarea  id="kam" cols="30" rows="10"  >  my name is  </textarea>
+ 
+         <label for="DOB"  class="userDOB"  > Enter DATE </label>
+         <br>
+         <input type="date"  id="DOB">
+ 
+         <label for="Password"> Enter password</label>
+         <input type="password" name="userpassword" id="Password" placeholder="3#$nbdjjd">
+       <br>
+       <br>
+         select Gender: <!-- confusion sare select ho rahe hai -->
+         <br>
+         <label for="Male">Male</label>
+         <input type="radio" name=" 1 " id="Male"   value=" male"> 
+         <br>
+         <label for="female">female</label>
+         <input type="radio" name="1" id="female" value=" female">
+         <br>
+         <label for="no gender">hijra</label>
+         <input type="radio" name="2 " id="no gender"  value="nogender">
+        <br>
+         select movies: <!-- same problkem face  like gender-->
+         <br>
+         <label for="avengers">avengers</label>
+         <input type="checkbox" name="1" id="avengers">
+         <br>
+         <label for="karma"> karma</label>
+         <input type="checkbox" name="1" id="karma">
+         <br>
+         <label for="spiderman">spiderman</label>
+         <input type="checkbox" name="1" id="spiderman">
+          <br>
+          <label for="google">serech here</label>
+          <input type="search" name="" id="google">
+         <input type="reset" value="reset">
+         
+         <input type="submit" value="submit now">
+
+
+
+
+
+
+
+   </fieldset>
+
+
+
+
+</body>
+</html>
