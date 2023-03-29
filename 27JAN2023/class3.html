@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class3[transition]</title>
+    <!-- ln-1 -->
+    <style>
+      div{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        transition: height 3s; /* hover ke karan animation fast ho raha tha  uski speed 
+        control karne ke leye */
+        transition: width 3s;
+       /* speed  me fark aata hai  - ease-in , ease */  
+        transition-timing-function: ease-out;
+      /* cursor ko text per touch karne ke 3s bad transition , hover ka asar start hoga  */
+        transition-delay: 3s;
+      }
+      div:hover /* animation fast */{ 
+        height: 500px;
+        width: 200px;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- ln-1 -->
+    <div></div>
+   <!-- ln-2 : tooltips -->
+   curse uspe touch karoge hint show karega 
+   <p  title="it is raj ">hello raj</p>
+
+
+</body>
+</html>

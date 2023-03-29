@@ -1,0 +1,126 @@
+<!-- List of Content :
+
+1. What is animation
+
+2. @keyframes Rules
+
+3. Delaying an animation
+
+4. Setting how many times an animation can run
+
+5. Run Animation in Reverse Direction or Alternate Cycles
+
+6. Specify the speed Curve of the Animation
+
+7. Specify the fill-mode For an Animation
+
+8. Animation Shorthand Property -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class4[Animation study  from harry ]</title>
+    <style>
+        .container{
+            background-color: #330ad7;
+        }
+        .box{
+            background-color: #0ee70e;
+            width: 250px;
+            height: 250px;
+            /*ln-1*/
+            position: relative; /* jisse box move kar sake */
+            /* animation-name: harry1; */
+            animation-name: harry2;
+            animation-duration: 20s;
+            /* ln-3 */
+            /*  animation-iteration-count: infinite; */
+            animation-iteration-count: 1;
+            /* ln-4 */
+            /* if width is long 1400 animation aage tak jayega vahi uk jayega 
+            animation-fill-mode: forwards; */
+            /* if width  is short 40px animation  piche tak jayega vahi ruk jayega 
+            animation-fill-mode: backwards; */
+            /* apnijagah vapas ajayega 
+            animation-fill-mode: alternate ; */
+            /* ln-5 */
+            /* jate time  me slow hoga  aate time fast hoga 
+            animation-timing-function: ease-in; */
+            /* jate time fast hoga aate time slow hoga 
+            animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out;  */
+            /* ln-6 */
+            /* 3s  baad animation start hoga 
+            animation-delay: 3s; */
+            /* ln-7 */
+            /* reverse animation
+            animation-direction: reverse; */
+            /* animation forword side  
+            animation-direction:alternate;*/
+            /* ln-9 */
+            /* uppar ki saari proprty ek bar me likhne ka trika */
+            /* animation: harry2 relative  20s 1 reverse ease-in; */
+        }
+   /* ln-2*/
+   /* animation name to dedeya but use chalane ke leye  
+   @keframe ka use keya jata hai   */
+
+     @keyframes harry1 {
+     from{                   /* ****  backside animation  at one time****** */
+   width: 50px;
+    }
+     to{                       /*forwoad side animation  at one time*/
+     width: 400px;
+    } 
+                   /*   from-to : backside to forwoad  both type animation at one time*/
+   } 
+
+   /* ln-8 */
+   /* jidhar bhi force lagana ho udhar name likh do like : top: 50px toh box neche ki 
+   taraf ajayega .  */
+   @keyframes harry2 {
+    0%{
+    top: 0px;
+    left: 0px;
+    }
+    25%{
+          top: 250px;
+          left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    
+    100%{
+        top: 0px;
+        left: 250px; 
+
+    }
+    
+   }
+
+    
+   
+
+   
+
+    </style>
+</head>
+<body>
+<div  class="container">
+    <div class="box">
+        this is a box 
+
+    </div>
+</div>
+   
+
+
+
+</body>
+</html>
