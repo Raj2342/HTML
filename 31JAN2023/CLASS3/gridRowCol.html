@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[grid album]</title>
+    <style>
+        .container{
+            display: grid;
+          grid-template-columns:   repeat(3,1fr);
+          grid-template-rows:  repeat(3 , 160px) ;
+          height: 700px; /* jab height ko on rakho tab (.box) ki height and width ki 
+          off kar do */
+        }
+   /* .box{
+    height: 100px;
+    width: 100px;
+   } */
+
+   .box-1{
+    background-color: #f60909;
+    /* ln-1 */
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+   }
+
+   .soc{
+    display: grid;
+    grid-template-columns:   repeat(3,1fr);
+    
+    /* flex-direction: row;
+   align-items: center; */
+   /* grid-template-rows: 2px ; */
+   justify-content: end;
+
+   }
+
+   .sop{
+    height: 50px;
+    width: 50px;
+   
+    
+    
+   }
+   .cop-1{
+    background-color: #34e615;
+    /* justify-self: end; */
+   }
+   .cop-2{
+    background-color: #1e08e6;
+   }
+   .cop-3{
+    background-color: #eeea17;
+   }
+
+   .box-2{
+    background-color: #09f644;
+    
+   }
+
+   .box-3{
+    background-color: #f609d6;
+    
+   }
+
+   .box-4{
+    background-color: #0915f6;
+    
+   }
+
+   .box-5{
+    background-color: #f6f209;
+    
+   }
+
+   .box-6{
+    background-color: #09f6cf;
+    /* ln-2 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+   }
+
+   .box-7{
+    background-color: #f209f6;
+    
+   }
+
+   .box-8{
+    background-color: #09daf6;
+   
+    
+   }
+
+   .box-9{
+    background-color: #e6f609;
+    
+   }
+
+   
+ 
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box box-1 soc">
+            <div class="sop cop-1"></div>
+            <div class="sop cop-2"></div>
+            <div class="sop cop-3"></div>
+        </div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+        <div class="box box-7"></div>
+        <div class="box box-8"></div>
+        <div class="box box-9"></div>
+       
+    </div>
+
+
+</body>
+</html>
