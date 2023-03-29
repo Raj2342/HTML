@@ -1,0 +1,29 @@
+/*  ln : 1 universal selector  
+ * = estrik symbol 
+ purpose = margin , padding  vo dafault pahele se kuch deta hai , 
+  web page mergin , padding crate hoti hai    */
+*{
+    margin: 100px ;
+    padding: 100px;
+}
+/* ln-2 : element selector 
+note : ek class me multiple element ko target kar  sakte ho  */
+h1{
+    color: blueviolet;
+}
+/* ln-3 : class selector  */
+.pra{
+    color: aqua;
+}
+.hello{
+    font-size: 25px;
+}
+/* ln-4 : id selector  */
+#pw{
+    color: chartreuse;
+}
+
+/* selector list  */
+.long , .long1 , .long2 , .long3{
+    color: darkorange;
+}
