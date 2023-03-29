@@ -1,0 +1,92 @@
+<!-- Most frequently used CSS Pseudo class
+selectors.
+
+● hover
+
+● focus
+
+● link
+
+● visited
+
+● active
+
+● first-child
+
+● lang
+● nth-child() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS1[pseudo class ]</title>
+    <style>
+        /* leanin-1: */
+    .hover:hover {
+        background-color: rgb(240, 11, 11);
+        color: cadetblue;
+    } 
+   
+      input:focus {
+             color: rgb(237, 19, 19);
+             background-color: rgb(18, 14, 14);
+             font-size: 25px;
+      }
+      
+      /* leaning-2: */
+     /* a:hover{
+        color: blue;
+     }
+     a:active{
+        color: chartreuse;
+     }
+     a:visited{
+        color: deeppink;
+     } */
+
+     /* leaning-3 */
+      /* parents ke do baccho me pahela baccha ko color dega  */
+     /* a:first-child{
+        color: gold;
+     } */
+        /* leanin-4 */
+        /* :nth-child(1) , :nth-child(2) , :nth-child(odd) , :nth-child(2n + 1) */
+     a:nth-child(even) {
+        color: gold;
+     }
+
+
+    </style>
+</head>
+<body>
+    <!-- leaning-1 -->
+    <!-- pseudo class  : line ko touch karne se hover ka asar dikta hai-->
+    <p class="hover"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque illo inventore iure, et incidunt reiciendis praesentium. Praesentium adipisci fugiat animi aut delectus. Laudantium nisi sed asperiores consectetur iure vel.
+    </p>
+   
+    <input type="text" >
+    
+    <!-- leanning-2 -->
+    <hr>
+    <!-- <a href="https://www.google.com/">google:</a> -->
+   
+     <!-- leaning-3 -->
+     <nav>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+     <a href="https://www.youtube.com/">youtube</a>
+    </nav>
+
+
+
+
+
+</body>
+</html>

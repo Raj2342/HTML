@@ -1,0 +1,83 @@
+<!-- Pseudo Elements
+
+CSS allows developers to create special types of selectors called
+pseudo-elements, which can be used to style specific parts of an HTML element.
+
+Some of the pseudo-elements are
+● ::first-line
+● ::first-letter
+● ::after
+● ::before
+● ::marker
+● ::selection -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+  <style>
+   /* ::first-line , ::first-letter  */
+ 
+   /* p::first-line{
+       color: deeppink;
+   } */
+
+   p::after{
+         content:"kishan bhoj";
+         color:blue
+   }
+
+   p::before{
+    content : "bhoj ji hai kya";
+    color: chartreuse;
+   }
+   p::selection{
+    background-color: black;
+    color: gold;
+   }
+
+  /* ::marker{
+    color: blue;
+  } */
+
+    .lang::marker {
+    color: rgb(239, 97, 15);
+  }
+
+  </style>
+
+</head>
+<body>
+    
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nemo neque dolorem, nulla accusantium autem eos ipsam omnis repellendus esse itaque rerum beatae harum eligendi ipsum fugit pariatur quibusdam recusandae possimus magnam commodi illum at, vitae mollitia? Laborum magnam autem modi iure facere fugiat, ex voluptatibus aperiam, rem corporis commodi.</p>
+<h1>marker</h1>
+<!-- leanin-1 -->
+<!-- <ol>
+    <li>heloo bacchooo</li>
+    <li>heloo bacchooo</li>
+    <li>heloo bacchooo</li>
+
+</ol>
+<ul>
+    <li>kooo saha</li>
+    <li>kooo saha</li>
+    <li>kooo saha</li>
+</ul> -->
+ <!-- leaning-2 -->
+
+    <ol class=" lang">
+        <li>lang bahu</li>
+        <li>lang bahu</li>
+        <li>lang bahu</li>
+    </ol>
+
+
+
+</body>
+</html>
