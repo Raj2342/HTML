@@ -1,0 +1,84 @@
+<!-- various ways to achieve responsive desigen -->
+<!-- 1. setting up the viewport
+2. use max-width/max-height
+3. using css Media queries
+4. using rem/vh/vw units over pixels -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta viewport  agar na ho to neche ki proprpety work nahi karegi like @media proprty  kam nahi karegi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-2[media queries]</title>
+  <style>
+    /* ln-1 */
+   body{
+    background-color: #ee1616;
+   }
+   div {
+     font-size: x-large;
+     text-align: center;
+   }
+   div::after{
+      content:' not 900 and less than 900px'; 
+   }
+    /* ln-4 */
+    
+   @media  ( min-width: 300px ) 
+   {
+       body{
+           background-color: #eeedf9;
+        }
+        div::after{
+            content:'very-small' ;
+        }
+    }  
+    /* ln-5  */
+     @media ( min-width: 400px ) and (max-width:758px)/*( 400px<= width <=758px)*/
+   {      
+       body{
+           background-color: #e5ec12;
+        }
+        div::after{
+            content:'400 to 758px' ;
+        }
+    }  
+   
+   /* ln-3 */
+   @media  ( min-width: 758px /*if viewport is atleast 900px then this style will apply otherwise red*/) 
+   {
+       body{
+           background-color: #120af4;
+        }
+        div::after{
+            content:'thanks full middle' ;
+        }
+    }   
+        
+        /* ln-2 */
+         @media  ( min-width: 900px /*if viewport is atleast 900px then this style will apply otherwise red*/) 
+        {
+            body{
+                  background-color: #0af48e;
+                 }
+          div::after{
+                       content:'900 and  greater than 900' ;
+                     }
+        }
+  
+
+  </style>
+
+
+
+</head>
+<body>
+       <div></div>
+
+
+
+
+</body>
+</html>

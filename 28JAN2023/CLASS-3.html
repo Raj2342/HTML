@@ -1,0 +1,79 @@
+<!-- Lecture CheckList
+
+1. Why Media Queries are popular?
+2. Typical Breakpoints
+3. Writing media queries for different screens.
+4. Code walkthrough. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-3[Writing
+        Media Query
+        for Different
+        Screens]</title>
+    <style>
+div{
+    text-align: center;
+
+}
+/* mobile phone  */
+@media (max-width:600px ) {
+     body{
+        background-color: #f10808;
+     }
+     div::after{
+        content: 'this mobile size compatiable';
+     }
+    }
+ /* portain-tablet and big mobile phone  */
+ @media (min-width:600px ) {
+    body{
+        background-color: #eae3e3;
+     }
+     div::after{
+        content: 'this portain-tablet and big mobile phone compatiable';
+     }
+
+ }
+           /* tables*/
+ @media (min-width:768px) {
+    body{
+        background-color: #20cd3a;
+     }
+     div::after{
+        content: 'this tablets compatiable';
+     }
+
+ }
+
+ /* laptops */
+ @media (min-width:900px) {
+    body{   /*992px*/
+        background-color: #1410e0;
+     }
+     div::after{
+        content: 'this laptops compatiable';
+     }
+
+ }
+
+ /* 1200px- larger screnn */
+
+
+
+
+
+
+    </style>
+        
+</head>
+<body>
+    <div></div>
+
+
+</body>
+</html>
