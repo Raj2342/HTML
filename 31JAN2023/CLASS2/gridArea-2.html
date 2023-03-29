@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area-2</title>
+    <style>
+     .cont{
+        display: grid;
+        grid-gap: 1rem;/* for gap btw every row*/
+        /*   ****The order of values in the grid-template property is as follows:***
+          ● grid-template-rows
+          ● grid-template-columns
+          ● grid-template-areas */
+        grid-template-areas:   'navbar navbar navbar  navbar'  
+        ' aside section section section  '
+        'footer footer footer footer'
+        ;
+         
+    }
+    
+    .box{
+        background-color: #c2ee10;
+        border: 3px solid black;
+        padding: 12px ;
+    }
+
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+        height: 500px;
+    }
+
+    #aside{
+        grid-area: aside;
+    }
+
+    #footer{
+        grid-area: footer;
+    }
+
+
+
+        
+    </style>
+</head>
+<body>
+ <div class="cont">
+
+
+     <div class="box " id="navbar">home about contectus </div>
+     <div class="box" id="section">  section Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ad, quaerat ratione earum numquam pariatur error, odit et magnam mollitia modi sunt voluptates eveniet? Harum ut fuga veniam explicabo molestiae deserunt illo sed, labore eaque amet. Optio assumenda deserunt, obcaecati maxime vero distinctio sapiente quaerat explicabo inventore delectus veniam ea?</div>
+     <div class="box" id="aside"> aside Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, tempora.</div>
+
+     <footer class="box" id="footer">  fotter Lorem ipsum dolor sit amet, consectetur adipisicing  placeat nostrum, excepturi esse, net, molestiae sunt ullam nam illo quae magni nesciunt obcaecati.</footer>
+ </div>
+
+
+    
+</body>
+</html>
