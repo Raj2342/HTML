@@ -1,0 +1,41 @@
+/* descendent selector: 
+Descendent in general means the one who is under or the one who is a child
+element. */
+main p  {
+    color: aqua;
+}
+
+/* child selector:
+The child selector is also called a direct selector. It can only target the direct
+or immediate child of the parent selector. */
+h1> p , h3 {
+    color: blue;
+}
+h4>main> p  {
+    color: chartreuse;
+}
+
+/* Adjacent sibling selector.
+
+The + combinator selects adjacent element siblings.It will select only the
+element that is immediately after the mentioned element. */
+/* section ke baad jo keval 1 para ko target kar payega  */
+/* section + p {   
+    color: pink;
+} */
+/* General sibling selector.  */
+/* section ke baad multiple para ko target karta hai */
+section ~ p {
+    color: pink;
+} 
+
+/* **** Attribute selectors ****** */
+/* <!-- 1.[attribute="value"]--> */
+[target=_blank]{       
+    color: rgb(0, 255, 60);
+}
+
+/* <!-- 2.[attribute~="value"] --> */
+[alt ~="pw1"]{
+   background-color: aqua;
+}

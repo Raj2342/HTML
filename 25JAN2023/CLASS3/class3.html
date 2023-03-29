@@ -1,0 +1,85 @@
+<!-- Lecture CheckList
+
+1. CSS Combinators.
+2. Attribute Selectors.
+
+CSS Combinators.
+
+A CSS selector can contain more than one simple selector.
+Between the simple selectors, we can include a combinator.
+
+Combinator Selectors include
+
+1. Descendent selector.
+2. Child selector.
+3. Adjacent sibling selector.
+4. General sibling selector. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class3[CSS Combinators. ]</title>
+    <link rel="stylesheet" href="./combinator.css">
+</head>
+<body>
+    <main>
+        <p>pw skills </p>
+        <p>pw skills </p>
+        
+    </main>
+
+    <h1>
+        <p> hallo wolsd</p>
+        <p> hallo wolsd</p>
+        <h3>  wow comig ana </h3>
+       
+       
+    </h1>
+
+    <h4>
+        <main>
+            <p>  sdefs efewf </p>
+            <p>  sdefs efewf </p>
+        </main>
+    </h4>
+    <!-- Adjacent sibling selector.: section ke bahar jo  ayega use 
+     run karga -->
+    <!-- <section>
+        <p> hello bahi shab </p>
+    </section>
+    <p>my name is bahu tika </p> -->
+
+    <!-- General sibling selector. -->
+    <section>
+        <p> hello bahi shab </p>
+        <p> hello bahi shab </p>
+    </section>
+    <p>my name is bahu tika </p>
+    <p>kalu singh  </p>
+    <h6> <!-- not affected -->
+        <p>dfd </p>
+    </h6>
+
+     <!--**** Attribute selectors ******-->
+     <!-- 1.[attribute="value"]
+     2.[attribute~="value"]
+     3. [attribute|="value"]
+      4. [attribute^="value"]
+      5. [attribute$="value"] -->
+
+      <!-- 1.[attribute="value"]-->
+      <a href="google.com" target="_blank"> google</a>
+
+      <!-- 2.[attribute~="value"] -->
+      <img src="hello.png" alt="not loading">
+      <img src="hello.png" alt="pw1">
+        
+    
+
+
+
+</body>
+</html>
