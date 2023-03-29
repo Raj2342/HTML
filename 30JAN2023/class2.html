@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class2[flex]</title>
+    <style>
+        .cont{
+            /* flex , inline-flex manyh more */
+            display:flex;
+            border: 1px solid black ;
+            /* flex-direction: column; */
+            /* flex-direction:column-reverse; */
+            flex-direction:row;
+            /* flex-direction:row-reverse; */
+            /* flex-wrap se sab ek me bandh jate hai  */
+            /* flex-wrap: wrap; */
+
+            /*  ***** flex-flow: flex wrap  flex direction ;****** */
+               /* flex-flow: wrap column; */
+           
+           
+               /*         ***      x- axis      ***      */
+            /* justify-content: center; */
+            /* justify-content:end; */
+            /* justify-content: space-around; */
+            /* justify-content:space-evenly; */
+            /* justify-content:space-between; */
+            
+            /*           ***       y-axis   **** 
+            but imp : aling-item ko work karne ke leye  .box{ } ko off karna hoga tabhi 
+            work karega varna nahi         */
+            /* align-items:flex-start ;
+            align-items:flex-end ;*/
+            /* align-items:center ;  */
+            height: 160px;
+
+            /* ***gap*** */
+            /* gap: 100px; */
+            /* row-gap: 100px; */
+            column-gap: 100px;
+
+           
+
+            
+        }
+    /* .box{
+        height: 100px;
+        width: 100px;
+    } */
+    .box1{
+        background-color: #ef0a0a;
+    }
+    .box2{
+        background-color: #d8f211;
+    }
+    .box3{
+        background-color: #13ef3b;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box3">box3</div>
+        <div class="box box3">box3</div>
+        <div class="box box3">box3</div>
+    </div>
+
+
+</body>
+</html>

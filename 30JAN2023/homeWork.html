@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style>
+        .align{
+           display: flex;
+           border: 2px solid black;
+           margin: 50px;
+           padding: 10px;
+           width: 800px;
+           height: 400px;
+           flex-wrap: wrap;
+           /* align-content: do row me changes provide karta hai 
+           vaulues : flex-start , flex-end , centre , stretch , space-around , space-between
+           space-evenly  */
+           /* align-content: flex-start; */
+           align-content: flex-end;
+           
+           
+        }
+     .box{
+        height: 100px;
+        width: 100px;
+     }
+     .box1{
+        background-color: #2a13da;
+     }
+     .box2{
+        background-color: #d11717;
+     }
+     .box3{
+        background-color: #13d80d;
+     }
+
+    </style>
+</head>
+<body>
+    
+    <div class="align">
+        <div class="box box1">box1</div>
+        <div class="box box2"> box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box2">box4</div>
+        <div class="box box1">box5</div>
+        <div class="box box3">box6</div>
+        <div class="box box2">box7</div>
+        <div class="box box1">box8</div>
+        <div class="box box3">box8</div>
+        <div class="box box2">box8</div>
+    </div>
+
+</body>
+</html>
